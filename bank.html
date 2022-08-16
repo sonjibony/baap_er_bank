@@ -8,10 +8,46 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
+<body>
 <header>
     <h1 class="text-5xl text-center py-10">Let's Get Some <span class="text-lime-700 font-semibold">Moooooney</span>!!!</h1>
 </header>
-<body>
+<main>
+  <section class=" grid grid-cols-3 gap-4 mx-14">
+<div class="bg-yellow-400 px-6 py-10 rounded-lg">	
+    <h1 class="text-3xl">Deposit</h1>
+    <p  class="text-5xl">$<span id="deposit-total" >00</span></p>
+</div>
+<div class="bg-red-400	 px-6 py-10 rounded-lg">	
+    <h1 class="text-3xl">Withdraw</h1>
+    <p class="text-5xl">$<span id="withdraw-total">00</span></p>
+</div>
+<div class="bg-teal-400 px-6 py-10 rounded-lg">	
+    <h1 class="text-3xl">Balance</h1>
+    <p class="text-5xl">$<span id="balance-total">1240</span></p>
+</div>
+
+
+  </section>  
+  <section class=" grid grid-cols-2 gap-4 mx-14 my-10">
+<div class="bg-lime-200 px-6 py-10 rounded-lg">	
+    <h1 class="text-3xl"> Please Deposit</h1>
+    <input id="deposit-field" class="block my-3 w-3/4 h-8 p-5" type="text" placeholder="$ Amount ">
+    <button id="deposit" class=" bg-lime-700 py-2 px-8 rounded-lg text-white hover:bg-lime-500 ">Deposit</button>
+</div>
+<div class="bg-blue-200 px-6 py-10 rounded-lg">	
+    <h1 class="text-3xl"> Please Withdraw</h1>
+    <input id="withdraw-field" class="block my-3 w-3/4 h-8 p-5" type="text" placeholder="$ Amount ">
+    <button id="withdraw" class=" bg-lime-700 py-2 px-8 rounded-lg text-white hover:bg-lime-500 ">Withdraw</button>
+</div>
+
+
+
+
+  </section>  
+</main>
+<script src="deposit.js"></script>
+<script src="withdraw.js"></script>
     
 </body>
 </html>
